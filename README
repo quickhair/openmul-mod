@@ -2,48 +2,16 @@ OpenMUL
 
 @Shoufu @Veljko
 
-$  git clone https://github.com/openmul/openmul.git
 
-For getting source code based on permissive license (eg Apache or BSD) or any support, please contact support@openmul.org
+## Source
+$  git clone https://github.com/quickhair/openmul-mod.git
+
 
 ## How to build MUL Controller on Ubuntu/CentOS ?
-
-1. Run all-in-one build command : 
-
- a) For Ubuntu 12.04 LTS/CentOS-5 or higher, run the following command : 
-   
+   Run all-in-one build command:
    $ ./build.sh 
-
    The above command will install all necessary packages and build necessary modules.
 
- b) For using the GUI, follow the INSTALL.GUI readme file
-
-2. Executables will be built as :
-
-   Core :  <top-mul-dir>/mul/mul
-   Application (eg l2switch) :  <top-mul-dir>/application/l2switch/mull2sw
-                   
-   - Other applications will be built in their respective directories inside <top-mul-dir>/application/
-   - You need to run using sudo or as admin.
-
-6. How to run ?
-    
-    Mul provides an utility startup script for various use cases :  
-     
-    1. Initialize MuL's execution environment
-    2. Start MuL and its components
-
-    $ cd <top-mul-dir>
-    $ ./mul.sh start l2switch   ## Run in l2switch mode
-    
-    OR,
-
-    $ ./mul.sh start fabric     ## Run in fabric 
-
-    OR,
-
-    $ ./mul.sh -h               ## Show all options
-
-7. Please follow openmul documentation in <top-mul-dir>/docs  
-
-8. For further information please visit www.openmul.org
+## How to run?
+    $ ./mul.sh init
+    $ ./mul.sh start l2switch
