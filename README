@@ -15,7 +15,7 @@ I could successfully build it on the OpenMUL VM (http://www.openmul.org/openmul-
 
 ## How to run?
     $ cd openmul-git
-    $ ./mul.sh init
+    $ ./mul.sh init  (only for first time)
     $ ./mul.sh start l2switch
 
 @Shoufu: I put your memory checking code in application/l2switch/l2switch.c 'cause I'm currently running this module.
