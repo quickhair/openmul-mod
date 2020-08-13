@@ -173,7 +173,7 @@ AM_SILENT_RULES([yes])
 
 AC_CONFIG_FILES([Makefile mul/Makefile application/l2switch/Makefile \
         docs/Makefile \
-        application/drone/Makefile \
+        application/drone/Makefile applicationn/memtrack/Makefile \
         application/makdi/Makefile application/fabric/Makefile \
         application/cli/Makefile application/prism/agent/Makefile \
         application/prism/app/Makefile application/nbapi/c-swig/Makefile \

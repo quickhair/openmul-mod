@@ -37,11 +37,12 @@ extern initcall_t __start_modvtyinit_sec, __stop_modvtyinit_sec;
 #define L2SW_APP_NAME "mul-l2sw"
 #define TR_APP_NAME "mul-tr"
 #define MAKDI_APP_NAME "mul-makdi"
+#define MTRACK_APP_NAME "mul-mtrack"
 #define FEMTO_APP_NAME "mul-femto"
 #define PRISM_APP_NAME "prism"
 #define CONX_APP_NAME "ConX"
 #define DRONE_APP_NAME "Drone"
-#define MUL_MAX_SERVICE_NUM 9
+#define MUL_MAX_SERVICE_NUM 10 
 
 #define FAB_APP_COOKIE 0x1111 
 #define CLI_APP_COOKIE 0x0

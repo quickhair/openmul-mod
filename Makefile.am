@@ -9,6 +9,7 @@ SUBDIRS = \
           services/loadable/conx \
           application/l2switch \
 		  application/makdi \
+		  application/memtrack \
           application/fabric \
           application/cli \
           application/prism/agent/ \
@@ -26,6 +27,7 @@ DIST_SUBDIRS = \
                services/loadable/conx/ \
                application/l2switch \
 		  	   application/makdi \
+		  	   application/memtrack \
                application/fabric \
                application/cli \
                application/prism/agent/ \
