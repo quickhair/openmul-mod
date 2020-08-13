@@ -16,4 +16,4 @@ $  git clone https://github.com/quickhair/openmul-mod.git
     $ ./mul.sh init
     $ ./mul.sh start l2switch
 
-OpenMUL Documentation: https://raw.githubusercontent.com/openmul/openmul/master/docs/openmul-HOWTO.pdf
+OpenMUL Documentation: https://raw.githubusercontent.com/openmul/openmul/master/docs/openmul-HOWTO.pdf.
