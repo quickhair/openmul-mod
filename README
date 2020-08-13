@@ -7,7 +7,7 @@ I could successfully build it on the OpenMUL VM (http://www.openmul.org/openmul-
 $  git clone https://github.com/quickhair/openmul-mod.git
 
 
-## How to build MUL Controller on Ubuntu/CentOS ?
+## How to build MUL Controller on Ubuntu/CentOS?
    Run all-in-one build command:
    $ ./build.sh 
    The above command will install all necessary packages and build necessary modules.
