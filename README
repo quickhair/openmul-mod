@@ -16,5 +16,5 @@ $  git clone https://github.com/quickhair/openmul-mod.git
     $ ./mul.sh init
     $ ./mul.sh start l2switch
 
-@Shoufu: Currently I put your memory checking code in application/l2switch/l2switch.c
+@Shoufu: I put your memory checking code in application/l2switch/l2switch.c 'cause I'm currently running this module.
 OpenMUL Documentation: https://raw.githubusercontent.com/openmul/openmul/master/docs/openmul-HOWTO.pdf.
