@@ -16,6 +16,7 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
+#include <malloc.h>
 #include "config.h"
 #include "mul_common.h"
 #include "mul_vty.h"
@@ -139,6 +140,19 @@ l2sw_add(mul_switch_t *sw)
     l2sw_install_dfl_flows(sw->dpid);
 
     c_log_debug("L2 Switch 0x%llx added", (unsigned long long)(sw->dpid));
+	
+    struct mallinfo mi;
+    mi = mallinfo();
+    c_log_debug("Total non-mmapped bytes (arena):       %d\n", mi.arena);
+    //c_log_debug("# of free chunks (ordblks):            %d\n", mi.ordblks);
+    //c_log_debug("# of free fastbin blocks (smblks):     %d\n", mi.smblks);
+    //c_log_debug("# of mapped regions (hblks):           %d\n", mi.hblks);
+    //c_log_debug("Bytes in mapped regions (hblkhd):      %d\n", mi.hblkhd);
+    //c_log_debug("Max. total allocated space (usmblks):  %d\n", mi.usmblks);
+    //c_log_debug("Free bytes held in fastbins (fsmblks): %d\n", mi.fsmblks);
+    c_log_debug("Total allocated space (uordblks):      %d\n", mi.uordblks);
+    c_log_debug("Total free space (fordblks):           %d\n", mi.fordblks);
+    //c_log_debug("Topmost releasable block (keepcost):   %d\n", mi.keepcost);
 }
 
 static void
