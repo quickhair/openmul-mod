@@ -80,10 +80,10 @@ case "$1" in
     sudo ./mul -d
     popd >> /dev/null
     pushd  $curr_dir/application/l2switch/ >> /dev/null
-    sudo ./mull2sw -V 6000 -d
+    sudo ./mull2sw -V 6000
     popd >> /dev/null
     pushd  $curr_dir/application/cli/ >> /dev/null
-    sudo ./mulcli -V 10000  -d
+    sudo ./mulcli -V 10000
     popd >> /dev/null
     source pythonpath.sh
     pushd  $curr_dir/application/nbapi/py-tornado/ >> /dev/null
@@ -198,10 +198,10 @@ case "$1" in
     sudo ./mul -d -H $2
     popd >> /dev/null
     pushd  $curr_dir/application/l2switch/ >> /dev/null
-    sudo ./mull2sw -V 6000 -d
+    sudo ./mull2sw -V 6000
     popd >> /dev/null
     pushd  $curr_dir/application/cli/ >> /dev/null
-    sudo ./mulcli -V 10000  -d
+    sudo ./mulcli -V 10000
     popd >> /dev/null
     echo "OpenMUL l2switch mode is running.."
     ;;
