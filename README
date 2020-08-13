@@ -9,10 +9,12 @@ I could successfully build it on the OpenMUL VM (http://www.openmul.org/openmul-
 
 ## How to build MUL Controller on Ubuntu/CentOS?
    Run all-in-one build command:
+   $ cd openmul-git
    $ ./build.sh 
    The above command will install all necessary packages and build necessary modules.
 
 ## How to run?
+    $ cd openmul-git
     $ ./mul.sh init
     $ ./mul.sh start l2switch
 
